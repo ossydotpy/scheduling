@@ -1,4 +1,28 @@
-# this code is for transforming our excel data into dictionaries which will then be used to create groupings for students.
+# The code is designed to categorize the departments offering a set of courses into groups such that 
+# no two courses of the same department are assigned to the same group.
+# The logic behind this code can be broken down into the following steps:
+
+# Read in an Excel file containing data on courses and the departments that offer them.
+
+# Sort the courses in descending order based on the number of departments that offer the course.
+
+# Initialize an empty list to store the student groups.
+
+# Loop through each course, and for each course, assign departments to groups.
+
+# For each department offering the course, check if it is already assigned to a group for that course.
+
+# If the department is already assigned to a group, add the group index to a set of group indices.
+
+# If the department is not assigned to a group, create a new group for it and add the group index to the set of group indices.
+
+# For each group index in the set of group indices, add the department and the course code to the corresponding group.
+
+# Print the final student groups.
+
+# By following this logic, 
+# the code ensures that each department offering a course is assigned to a unique group, 
+# thereby preventing any conflicts in scheduling exams for those courses.
 
 import pandas as pd
 
